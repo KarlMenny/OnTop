@@ -1,0 +1,196 @@
+.services {
+	position: relative;
+	min-height: 816px;
+	margin-bottom: 60px;
+
+	&--responsive {
+		display: none;
+	}
+
+	&__link {
+		position: absolute;
+
+		&--pos-1 {
+			top: 0;
+			left: 0;
+		}
+
+		&--pos-2 {
+			top: 0;
+			left: 34.29%;
+		}
+
+		&--pos-3 {
+			top: 0;
+			right: 0;
+		}
+
+		&--pos-4 {
+			top: 50.8%;
+			left: 0;
+		}
+
+		&--pos-5 {
+			top: 47.5%;
+			left: 34.29%;
+		}
+
+		&--pos-6 {
+			top: 47.5%;
+			right: 0;
+		}
+	}
+
+	&__image {
+		display: block;
+
+
+		&:hover {
+			filter: brightness(120%);
+		}
+	}
+
+	&__text {
+		font-size: 1.125rem;
+		font-weight: 900;
+		position: absolute;
+
+		&--pos-1 {
+			left: 95px;
+			bottom: 45px;
+		}
+
+		&--pos-2 {
+			left: 57px;
+			bottom: 55px;
+		}
+
+		&--pos-3 {
+			left: 20px;
+			bottom: 55px;
+		}
+
+		&--pos-4 {
+			left: 98px;
+			bottom: 83px;
+		}
+
+		&--pos-5 {
+			left: 57px;
+			bottom: 83px;
+		}
+
+		&--pos-6 {
+			left: 28px;
+			bottom: 83px;
+		}
+	}
+
+	@media (min-width: 1367px) {
+		min-height: 1139px;
+
+		&__link {
+
+			&--pos-2 {
+				left: 34.3%;
+			}
+
+			&--pos-5 {
+				top: 46.25%;
+				left: 34.29%;
+				z-index: 1;
+			}
+
+			&--pos-6 {
+				top: 46.3%;
+			}
+		}
+
+		&__image {
+
+			&--size-1 {
+				width: 653px;
+			}
+
+			&--size-2 {
+				width: 860px;
+			}
+
+			&--size-3 {
+				width: 470px;
+			}
+
+			&--size-4 {
+				width: 653px;
+			}
+
+			&--size-5 {
+				width: 614px;
+			}
+
+			&--size-6 {
+				width: 668px;
+			}
+		}
+
+		&__text {
+
+			&--pos-3 {
+				left: 60px;
+				bottom: 150px;
+			}
+
+			&--pos-6 {
+				left: 90px;
+			}
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px),
+	(min-width: 320px) and (max-width: 767px) {
+		margin-bottom: 0;
+
+		&--desktop {
+			display: none;
+		}
+
+		&--responsive {
+			display: block;
+		}
+
+		&__link {
+			position: relative;
+			display: block;
+			text-align: right;
+		}
+
+		&__image {
+			display: block;
+			width: 100%;
+
+			&:hover {
+				filter: brightness(120%);
+			}
+		}
+
+		&__title {
+			@include pos($b: 37px, $l: 47px);
+			font-size: 0.625rem;
+			font-weight: 900;
+		}
+
+		&__text {
+			@include pos($t: 58px, $r: 47px);
+			width: 170px;
+			font-weight: 400;
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+		}
+	}
+}
+
+
+
+
+
+

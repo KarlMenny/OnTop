@@ -1,0 +1,162 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 550px 7.3% 55px;
+	background: #040F21 url(../images/header.jpg) no-repeat;
+	background-size: cover;
+
+
+	&__spline {
+		@include size(24.7%, 2px);
+		@include pos($b: 258px, $r: 0);
+		background: $white;
+	}
+
+	&__logo {
+		@include pos($t: 87px, $l: 10.2%);
+		transform: scale(1.45);
+
+		&:hover {
+			transform: scale(1.35);
+		}
+	}
+
+	&__title {
+		font-size: 9.375rem;
+		font-weight: 900;
+		letter-spacing: -0.625rem;
+		line-height: 6.5625rem;
+	}
+
+	&__subtitle {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: $red;
+	}
+
+	&__items {
+		position: relative;
+		margin-top: 30px;
+		margin-right: 2.1%;
+		text-align: right;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 15px;
+		transform-origin: right center;
+
+		&:hover {
+			transform: scale(1.07);
+		}
+
+		&--margin {
+			margin-bottom: 0;
+		}
+
+		&::after {
+			@include size(10px);
+			@include pos($t: 7.5px, $r: -25px);
+			content: '';
+			background: $red;
+		}
+	}
+
+	&__link {
+		font-weight: 300;
+		font-size: 1.125rem;
+
+	}
+
+	@media (min-width: 1367px) {
+		background-position-y: 60%;
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 280px;
+		padding-bottom: 30px;
+		background-position: 0 120%;
+
+		&__spline {
+			width: 34.5%;
+			bottom: 134px;
+		}
+
+		&__logo {
+			@include pos($t: 45px, $l: 6.8%);
+			transform: scale(0.9);
+
+			&:hover {
+				transform: scale(0.85);
+			}
+		}
+
+		&__title {
+			font-size: 3.75rem;
+			letter-spacing: -0.07em;
+			line-height: 3.7rem;
+		}
+
+		&__subtitle {
+			font-size: 0.5rem;
+			font-weight: 400;
+			line-height: 0.625rem;
+		}
+
+		&__items {
+			margin-top: 20px;
+		}
+
+		&__item {
+			margin-bottom: 0;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+
+			&::after {
+				@include size(5.62px);
+				@include pos($t: 8.5px, $r: -14px);
+			}
+		}
+
+		&__link {
+			font-weight: 400;
+			font-size: 0.5rem;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 390px;
+		padding-bottom: 120px;
+		background-position: 66% 0;
+
+		&__items,
+		&__spline {
+			display: none;
+		}
+
+		&__logo {
+			@include pos($t: -9px, $r: -1%);
+			left: initial;
+			transform: scale(0.8);
+
+			&:hover {
+				transform: scale(0.75);
+			}
+		}
+
+		&__title {
+			font-size: 3.75rem;
+			letter-spacing: -0.07em;
+			line-height: 3.7rem;
+		}
+
+		&__subtitle {
+			font-size: 0.625rem;
+			font-weight: 400;
+			line-height: 0.625rem;
+		}
+	}
+}

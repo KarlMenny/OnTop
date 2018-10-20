@@ -1,0 +1,174 @@
+.footer {
+	padding: 205px 0 65px;
+	background: $darkBlue;
+
+	&__tablet {
+		display: none;
+	}
+
+	&__list {
+
+		&--margin {
+			margin-bottom: 60px;		
+		}
+
+		&--margin-1 {
+			margin-bottom: 60px;		
+		}
+
+		&--margin-2 {
+			margin-bottom: 132px;		
+		}
+	}
+
+	&__title {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: $red;
+		margin-bottom: 25px;
+	}
+
+	&__items {
+		margin-left: 32px;
+
+		&--margin {
+			margin-top: 108px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 15px;
+
+		&--margin {
+			margin-bottom: 0;
+		}
+		
+		&::before {
+			@include size(10px);
+			@include pos($t: 4px, $l: -30px);
+			content: '';
+			background: $red;
+		}
+	}
+
+	&__link {
+		display: block;
+		transform-origin: 0 0;
+
+		&:hover {
+			transform: scale(1.07);
+		}
+
+		&--space {
+			white-space: nowrap;
+		}
+	}
+
+	&__address {
+		position: relative;
+		line-height: 1.0625rem;
+		padding-left: 32px;
+
+		&::before {
+			@extend [class^="icon-"];
+			@include pos($t: 2px, $l: -6px);
+			content: '\e904';
+			font-size: 1.875rem;
+			color: $red;
+		}
+	}
+
+	@media (min-width: 1367px) {
+		padding-top: 13%;
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 145px;
+		padding-bottom: 65px;
+
+		&__tablet {
+			display: block;
+		}	
+
+		&__hidden {
+			display: none;
+		}
+
+		&__list {
+			margin-bottom: 0;
+
+			&--margin {
+				margin-left: 11%;
+			}
+
+			&--margin-1 {
+				margin-top: 11%;
+			}
+		}
+
+		&__items {
+			margin-left: 69px;
+
+			&--margin-1 {
+				margin-left: 38px;
+			}
+		}
+
+		&__item::before {
+			left: -65px;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 60px;
+		padding-bottom: 38px;
+
+		&__tablet {
+			display: block;
+		}	
+
+		&__hidden {
+			display: none;
+		}
+
+		&__list {
+			margin-bottom: 0;
+
+			&--margin {
+				margin-left: 11%;
+			}
+
+			&--margin-1 {
+				margin-top: 25%;
+			}
+		}
+
+		&__title {
+			font-size: 0.625rem;
+			margin-bottom: 10px;
+		}
+
+		&__items {
+			margin-left: 30px;
+
+			&--margin-1 {
+				margin-left: 13px;
+			}
+		}
+
+		&__item {
+			font-size: 0.5rem;
+			margin-bottom: 5px;
+
+			&::before {
+				@include size(5px);
+				left: -36px;
+			}
+
+			&--before::before {
+				left: -30px;
+			}
+		}
+	}
+}

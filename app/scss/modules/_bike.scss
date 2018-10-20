@@ -1,0 +1,100 @@
+.bike {
+	position: relative;
+	padding: 430px 7.3% 60px;
+	text-align: right;
+	z-index: 0;
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		z-index: -1;	
+	}
+
+	&__block-image {
+		@include size(100%, 125%);
+		@include pos($t: -12%, $l: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/active_sport/bike.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	&__block-text {
+		display: inline-block;
+		width: 50%;
+	}
+
+	&__text {
+		line-height: 1.0625rem;
+		margin-bottom: 25px;
+	}
+
+	@media (min-width: 1367px) {
+
+		&__block-image {
+			height: 135%;
+			top: -17%;
+			background-position: 0 72%;
+		}
+
+		&__block-text {
+			width: 34%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 165px;
+		padding-bottom: 20px;
+
+		&__skew {
+			height: 132%;
+			top: -32%;
+		}
+
+		&__block-image {
+			height: 126%;
+			top: -13%;
+		}
+
+		&__block-text {
+			width: 52%;
+		}
+
+		&__text {
+			font-size: 10px;
+			line-height: 0.75rem;
+			margin-bottom: 15px;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding: 70px 12.5% 15px;
+		z-index: 1;
+
+		&__skew {
+			height: 100%;
+			top: 0;
+		}
+
+		&__block-image {
+			height: 130%;
+			top: -15%;
+		}
+
+		&__block-text {
+			width: 51%;
+		}
+
+		&__text {
+			font-size: 0.5rem;
+			line-height: 0.625rem;
+			margin-bottom: 8px;
+		}
+
+		&__display {
+			display: none;
+		}
+	}
+}

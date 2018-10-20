@@ -1,0 +1,125 @@
+.yoga {
+	position: relative;
+	padding-top: 182px;
+	z-index: 0;
+
+	&__skew {
+		@include size(100%, 82%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		background: #fff;
+		z-index: -1;
+	}
+
+	&__block-image {
+		@include size(50%, 116%);
+		@include pos($t: -8%, $r: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/wake_park/about_yoga.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	&__block-text {
+		width: 41%;
+	}
+
+	&__text {
+		color: #000;
+		line-height: 1.063rem;
+		margin-bottom: 15px;
+
+		&--margin {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__emit {
+		color: $red;
+	}
+
+	@media (min-width: 1367px) {
+		padding-top: 11%;
+
+		&__skew {
+			height: 78%;
+		}
+
+		&__block-image {
+			height: 122%;
+			top: -11%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		position: relative;
+		padding: 85px 7.3% 0;
+		margin-bottom: 37px;
+
+		&__skew {
+			height: 73%;
+		}
+
+		&__block-text {
+			width: 41%;
+			margin-left: 2%;
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__share {
+			@include pos($b: 0, $r: 9.3%);
+
+			&--margin {
+				margin-right: 0;
+			}
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		position: relative;
+		padding-top: 420px;
+		margin-bottom: 30px;
+
+		&__skew {
+			height: 40%;
+		}
+
+		&__block-image {
+			width: 100%;
+		}
+
+		&__block-text {
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__share {
+			@include pos($b: 48.5%, $r: 18.3%);
+
+			&--margin {
+				margin-right: 0;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+.shop-icon {
+	padding-top: 8px;
+
+	&__link {
+		margin-right: 70px;
+		font-size: 1.6875rem;
+		transition: color .03s linear;
+
+		&:hover {
+			color: $red;
+		}
+
+		&--margin {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,102 @@
+.booking {
+	position: relative;
+	padding: 180px 7.3% 40px;
+	z-index: 0;
+
+	&__logo {
+		@include pos($b: -61%, $l: 44.5%);
+	}
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		background: #fff;
+		z-index: -1;	
+	}
+
+	&__block-text {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #000;
+	}
+
+	&__share {
+		@include pos($b: -127%, $l: 0);
+	}
+
+	@media (min-width: 1367px) {
+		padding-top: 225px;
+
+		&__logo {
+			bottom: -62%;
+			left: 46%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 138px;
+		padding-bottom: 60px;
+
+		&__block-text {
+			display: block;
+			text-align: center;
+		}
+
+		&__text {
+			margin-bottom: 22px;
+		}
+
+		&__share {
+			display: none;
+		}
+
+		&__logo {
+			bottom: -44%;
+			left: 39.5%;
+			transform: scale(0.7);
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 60px;
+		padding-bottom: 30px;
+
+		&__block-text {
+			display: block;
+			text-align: center;
+		}
+
+		&__text {
+			display: inline-block;
+			width: 74%;
+			margin-bottom: 25px;
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			text-align: right;
+		}
+
+		&__logo {
+			bottom: -37%;
+			left: 29%;
+			transform: scale(0.3);
+		}
+
+		&__share {
+			width: 73%;
+			display: inline-block;
+			position: static;
+			margin-top: 30px;
+		}
+	}
+}
+

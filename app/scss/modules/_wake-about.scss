@@ -1,0 +1,162 @@
+.wake-about {
+	position: relative;
+	padding: 515px 7.3% 0;
+	text-align: right;
+
+
+	&__skew {
+		@include size(100%, 95%);
+		@include pos($t: -26%, $l: 0);
+		overflow: hidden;
+		background: #fff;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		text-align: right;
+	}
+
+	&__block-image {
+		@include size(50%, 114%);
+		@include pos($t: -7%, $l: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/wake_park/about_wake.jpg) no-repeat;
+		background-position: 100% 0;
+		background-size: cover;
+	}
+
+	&__block-text {
+		@include size(50%, 100%);
+		display: inline-block;
+		transform: skewY(6deg);
+		padding: 55px 7.3% 0 7.8%;
+		text-align: left;
+	}
+
+	&__text {
+		color: #000;
+		line-height: 1.0625rem;
+		margin-bottom: 15px;
+
+		&--margin {
+			margin-bottom: 0;
+		}
+	}
+
+	&__emit {
+		color: $red;
+	}
+
+	&__share {
+		display: inline-block;
+	}
+
+	&__response {
+		display: none;
+	}
+
+	@media (min-width: 1367px) {
+
+		&__skew {
+			top: -37%;
+			height: 94%;
+		}
+
+		&__block-image {
+			height: 123%;
+			top: -12%;
+			background-position: 40%;
+		}
+
+		&__block-text {
+			padding-top: 75px;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 0;
+		margin-bottom: 40px;
+
+		&__skew {
+			top: -24%;
+			height: 71%;
+		}
+
+		&__block-image {
+			left: initial;
+			right: 0;
+		}
+
+		&__text {
+			width: 40%;
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 35px;
+			}
+
+			&--margin--none {
+				margin-bottom: 15px;
+			}
+
+			&--display {
+				width: 94%;
+			}
+		}
+
+		&__block-text {
+			display: none;
+		}
+
+		&__response {
+			position: relative;
+			display: block;
+			text-align: left;
+			margin-left: 4%;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 345px;
+		margin-bottom: 40px;
+
+		&__skew {
+			height: 45%;
+			top: -6%;
+		}
+
+		&__block-image {
+			width: 100%;
+			height: 118%;
+			top: -9%;
+		}
+
+		&__block-text {
+
+			&--display {
+				display: none;
+			}
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 30px;
+			}
+
+			&--display {
+				display: none;
+			}
+		}
+
+		&__response {
+			display: block;
+			width: 75%;
+			margin: 0 auto;
+			text-align: left;
+		}
+	}
+}

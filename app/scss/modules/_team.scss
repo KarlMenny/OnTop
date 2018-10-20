@@ -1,0 +1,113 @@
+.team {
+	position: relative;
+	padding: 195px 0 10px;
+	z-index: 0;
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		background: #fff;
+		z-index: -1;
+	}
+
+	&__block-image {
+		@include size(50%, 116%);
+		@include pos($t: -8%, $r: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/team.jpg) no-repeat;
+		background-position: 80% 0;
+		background-size: cover;
+	}
+
+	&__block-text {
+		width: 40%;
+	}
+
+	&__text {
+		color: #000;
+		line-height: 1.063rem;
+		margin-bottom: 30px;
+
+		&--margin {
+			margin-bottom: 0;
+		}
+	}
+
+	&__emit {
+		color: $red;
+	}
+
+	@media (min-width: 1367px) {
+
+		&__block-image {
+			height: 121%;
+			top: -10%;
+		}
+
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding: 35px 0 600px;
+
+		&__skew {
+			height: 63%;
+			top: 37%;
+		}
+
+		&__block-image {
+			background-position: 100% 0;
+		}
+
+		&__block-text {
+			width: 81%;
+			margin: 0 auto;
+		}
+
+		&__text {
+			line-height: 1.0625rem;
+			font-size: 0.875rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__block-image {
+			@include size(100%, 116%);
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 0;
+		padding-bottom: 260px;
+
+		&__skew {
+			@include pos($b: 0, $l: 0);
+			top: initial;
+			height: 43%;
+		}
+
+		&__block-image {
+			@include size(100%, 116%);
+		}
+
+		&__text {
+			line-height: 0.75rem;
+			font-size: 0.625rem;
+			margin-bottom: 12px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__block-text {
+			width: 240px;
+			margin: 0 auto;
+		}
+	}
+}

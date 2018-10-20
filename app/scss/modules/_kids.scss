@@ -1,0 +1,171 @@
+.kids {
+	position: relative;
+	padding: 80px 0 25px;
+	text-align: right;
+	z-index: 0;
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		z-index: -1;	
+	}
+
+	&__block-skew {
+		display: none;
+	}
+
+	&__block-image {
+		@include size(50%, 116%);
+		@include pos($t: -8%, $l: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/active_sport/kids.jpg) no-repeat;
+		background-position: 100% 0;
+		background-size: cover;
+	}
+
+	&__image {
+		display: none;
+	}
+
+	&__block-text {
+		display: inline-block;
+		width: 39%;
+		text-align: left;
+		padding-right: 4%;
+	}
+
+	&__title {
+		font-weight: 900;
+		font-size: 3.125rem;
+		letter-spacing: -0.07em;
+		color: $dark;
+		opacity: .1;
+
+		&::first-letter {
+			color: $red;
+		}
+	}
+
+	&__text {
+		color: #000;
+		line-height: 1.0625rem;
+		margin-bottom: 20px;
+
+		&--margin {
+			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width: 1367px) {
+		padding-top: 7%;
+
+		&__skew {
+			height: 100.5%;
+		}
+
+		&__block-image {
+			height: 121%;
+			top: -10%;
+			background-position: 0 105%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 50px;
+		padding-bottom: 75px;
+
+		&__skew {
+			height: 81%;
+		}
+
+		&__block-image {
+			height: 113%;
+			top: -7%;
+		}
+
+		&__block-text {
+			width: 35.8%;
+			padding-right: 0;
+			margin-right: 7%;
+		}
+
+		&__title {
+			font-size: 1.875rem;
+			margin-bottom: 5px;
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 12px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 0;
+		padding-bottom: 35px;
+		text-align: left;
+
+		&__skew {
+			@include size(auto);
+			position: static;
+			overflow: initial;
+			margin-bottom: 20px;
+			transform: none;
+			background: none;
+			z-index: initial;	
+		}
+
+		&__block-skew {
+			display: block;
+			@include pos($t: 44%, $l: 0);
+			@include size(100%, 25%);
+			transform: skewY(-6deg);
+			background: #fff;
+
+		}
+
+		&__block-image {
+			@include size(auto);
+			position: static;
+			transform: none;
+			background: none;
+		}
+
+		&__image {
+			display: block;
+		}
+
+		&__block-text {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			width: 72%;
+			padding-right: 0;
+			z-index: 1;
+		}
+
+		&__title {
+			font-size: 1.875rem;
+			line-height: 2.3125rem;
+			margin-bottom: 25px;
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 10px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
