@@ -1,0 +1,94 @@
+.wake {
+	padding: 45px 7.3% 225px;
+	background: #c6c6c6 url(../images/wake_park/wake.jpg) no-repeat;
+	background-size: cover;
+
+	&__title {
+		font-size: 7.5rem;
+		font-weight: 900;
+		letter-spacing: -0.07em;
+		margin-bottom: 285px;
+
+		&::first-letter {
+			color: $red;
+		}
+	}
+
+	&__items {
+		margin-right: 2.4%;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 10px;
+		text-align: right;
+		transform-origin: right center;
+
+		&:hover {
+			transform: scale(1.07);
+		}
+
+		&--margin {
+			margin-bottom: 0;
+		}
+
+		&::after {
+			@extend [class^="icon-"];
+			@include pos($t: 5px, $r: -30px);
+			content: '\e904';
+			color: $red;
+		}
+	}
+
+	&__link {
+		font-weight: 300;
+		font-size: 1.125rem;
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 30px;
+		padding-bottom: 125px;
+		text-align: right;
+
+		&__title {
+			font-size: 3.75rem;
+			margin-bottom: 155px;
+		}
+
+		&__item {
+
+			&::after {
+				right: -18px;
+			}
+		}
+
+		&__link {
+			font-size: 0.625rem;
+			font-weight: 400;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 25px;
+		padding-bottom: 65px;
+		text-align: right;
+
+		&__title {
+			font-size: 3.75rem;
+			line-height: 3.1875rem;
+			margin-bottom: 60px;
+		}
+
+		&__item {
+
+			&::after {
+				right: -16px;
+			}
+		}
+
+		&__link {
+			font-size: 0.625rem;
+			font-weight: 400;
+		}
+	}
+}

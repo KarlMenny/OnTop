@@ -1,0 +1,17 @@
+.burger-btn {
+	display: none;
+
+	@media (min-width: 320px) and (max-width: 1365px) {
+		@include pos($t: 30px, $l: 85px);
+		display: block;
+		z-index: 2;
+
+		&--move {
+			left: 40px;
+		}  
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		left: 42px;
+	}
+}

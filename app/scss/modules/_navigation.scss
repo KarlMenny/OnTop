@@ -1,0 +1,47 @@
+.navigation {
+	line-height: 2.375rem;
+	background: #040F21;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+
+	&__items {
+		display: flex;
+		margin-right: 11.4%;
+	}
+
+	&__item {
+		margin-right: 90px;
+
+		&--margin {
+			margin-right: 0;
+		}
+
+		&::first-letter {
+			color: $red;
+		}
+	}
+
+	&__link {
+		font-size: 1.125rem;
+		font-weight: 900;
+		transition: color .3s linear;
+		
+		&:hover {
+			color: $red;
+		}
+
+		&--active {
+			color: $red;
+		}
+	}
+
+	@media (min-width : 320px) and (max-width : 1365px) {
+			display: none;
+	}
+}
+
+
+

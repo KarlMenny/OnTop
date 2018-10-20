@@ -1,0 +1,152 @@
+.travel {
+	position: relative;
+	text-align: right;
+	padding: 135px 0 110px;
+	z-index: 0;
+
+	&__logo {
+		@include pos($b: -33%, $l: 44.5%);
+	}
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		background: #fff;
+		z-index: -1;
+	}
+
+	&__block-image {
+		@include size(50%, 114%);
+		@include pos($t: -7%, $l: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/travel.jpg) no-repeat;
+		background-position: 0 100%;
+		background-size: cover;
+	}
+
+	&__block-text {
+		width: 41%;
+		display: inline-block;
+		text-align: left;
+	}
+
+	&__text {
+		color: #000;
+		line-height: 1.063rem;
+		margin-bottom: 30px;
+
+		&--margin {
+			margin-bottom: 0;
+		}
+	}
+
+	&__emit {
+		color: $red;
+	}
+
+	@media (min-width: 1367px) {
+		padding-top: 10%;
+
+		&__block-image {
+			height: 120%;
+			top: -10%;
+		}
+
+		&__logo {
+			bottom: -35%;
+			left: 46%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding-top: 760px;
+		padding-bottom: 25px;
+
+		&__skew {
+			height: 63%;
+		}
+
+		&__block-skew {
+			@include size(100%, 10%);
+			@include pos($b: 0, $l: 0);
+			transform: skewY(-6deg);
+			transform-origin: 100%;
+			background: #fff;
+			z-index: -1;
+		}
+
+		&__block-image {
+			width: 100%;
+		}
+
+		&__block-text {
+			display: block;
+			width: 81%;
+			margin: 0 auto;
+		}
+
+		&__text {
+			line-height: 1.0625rem;
+			font-size: 0.875rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__logo {
+			@include pos($b: -13.5%, $l: 39.5%);
+			transform: scale(0.7);
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 315px;
+		padding-bottom: 37px;
+
+		&__skew {
+			height: 40%;
+		}
+
+		&__block-skew {
+			@include size(100%, 10%);
+			@include pos($b: 0, $l: 0);
+			transform: skewY(-6deg);
+			transform-origin: 100%;
+			background: #fff;
+			z-index: -1;
+		}
+
+		&__block-image {
+			width: 100%;
+			height: 117%;
+			top: -8%;
+		}
+
+		&__block-text {
+			display: block;
+			width: 69%;
+			margin: 0 auto;
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			margin-bottom: 15px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__logo {
+			bottom: -18%;
+			left: 29%;
+			transform: scale(0.3);
+		}
+	}	
+}

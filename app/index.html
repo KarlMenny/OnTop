@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Travel with OnTop">
+	<meta name="author" content="Andreii">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-width: 1, minimum-width: 1">
+	<title>OnTop</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900|Raleway&amp;subset=cyrillic" rel="stylesheet">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="js/modules/bootstrap.min.css">
+	<link rel="stylesheet" href="js/modules/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="js/modules/slick.css">
+	<link rel="stylesheet" href="css/global.css">
+	<!--endbuild-->
+
+	<!-- <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/libs/slick.css">
+	<link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/styles.min.css"> -->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="burger-btn">
+			<img class="burger-btn__image" src="images/burger.svg" alt="Menu">
+		</div>
+		<div class="burger-menu burger-menu--padding">
+			<ul class="burger-menu__items">
+				<li class="burger-menu__item"><a href="index.html" class="burger-menu__link">Главная</a></li>
+				<li class="burger-menu__item burger-menu__item--before submenu">Мой кабинет
+					<ul class="burger-menu__subitems">
+						<li class="burger-menu__subitem"><a href="#" class="burger-menu__sublink">Мои заказы</a></li>
+						<li class="burger-menu__subitem burger-menu__subitem--margin"><a href="#" class="burger-menu__sublink">Корзина</a></li>
+					</ul>
+				</li>
+				<li class="burger-menu__item burger-menu__item--before"><a href="active_sport.html">Активный отдых с OnTop</a></li>
+				<li class="burger-menu__item burger-menu__item--before">Xtreme SHOP</li>
+				<li class="burger-menu__item burger-menu__item--before">Прокат</li>
+				<li class="burger-menu__item"><a href="wake_park.html" class="burger-menu__link">Wake Park</a></li>
+				<li class="burger-menu__item"><a href="#" class="burger-menu__link">Контакты</a></li>
+				<li class="burger-menu__item burger-menu__item--margin"><a href="#" class="burger-menu__link">Дополнительные услуги</a></li>
+			</ul>
+		</div>
+		<a href="#" class="header__logo">
+			<img class="header__image" src="images/logo.svg" alt="Logo">
+		</a>
+		<div class="header__spline"></div>
+		<div class="header__wrapper">
+			<h1 class="header__title">On Top</h1>
+			<p class="header__subtitle">Пригоди ближче ніж здається!</p>
+		</div>
+		<ul class="header__items">
+			<li class="header__item"><a href="#" class="header__link">Пешие походы</a></li>
+			<li class="header__item"><a href="#" class="header__link">Сплавы на байдарках</a></li>
+			<li class="header__item"><a href="#" class="header__link">Прокат велосипедов</a></li>
+			<li class="header__item"><a href="#" class="header__link">Горнолыжный отдых</a></li>
+			<li class="header__item header__item--margin"><a href="#" class="header__link">Сняряжение</a></li>
+		</ul>
+	</header>
+
+	<main class="main-content">
+		<section class="navigation">
+			<div class="container">
+				<nav class="navigation__menu">
+					<ul class="navigation__items">
+						<li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
+						<li class="navigation__item"><a href="active_sport.html" class="navigation__link navigation__link">Активный отдых</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Прокат</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Магазин</a></li>
+						<li class="navigation__item navigation__item--margin"><a href="wake_park.html" class="navigation__link">Wake Park</a></li>
+					</ul>
+					<div class="shop-icon">
+						<a href="#" class="shop-icon__link"><span class="shop-icon__icon icon-user"></span></a>
+						<a href="#" class="shop-icon__link shop-icon__link--margin"><span class="shop-icon__icon icon-shopping-cart"></span></a>
+					</div>
+				</nav>
+			</div>
+		</section>
+
+		<section class="services services--desktop">
+			<a href="#" class="services__link services__link--pos-1">
+				<img src="images/services/hiking.jpg" class="services__image services__image--size-1" alt="Walking routes">
+				<span class="services__text services__text--pos-1">Пешие маршруты</span>
+			</a>
+			<a href="#" class="services__link services__link--pos-2">
+				<img src="images/services/water.jpg" class="services__image services__image--size-2" alt="Water trips">
+				<span class="services__text services__text--pos-2">Водные походы</span>
+			</a>
+			<a href="#" class="services__link services__link--pos-3">
+				<img src="images/services/kids.jpg" class="services__image services__image--size-3" alt="Hiking with children">
+				<span class="services__text services__text--pos-3">Походы с детьми</span>
+			</a>
+			<a href="#" class="services__link services__link--pos-4">
+				<img src="images/services/excursions.jpg" class="services__image services__image--size-4" alt="Excursion tours">
+				<span class="services__text services__text--pos-4">Экскурсионные туры</span>
+			</a>
+			<a href="#" class="services__link services__link--pos-5">
+				<img src="images/services/mountains.jpg" class="services__image services__image--size-5" alt="Ski holidays">
+				<span class="services__text services__text--pos-5">Горнолыжный отдых</span>
+			</a>
+			<a href="#" class="services__link services__link--pos-6">
+				<img src="images/services/corptours.jpg" class="services__image services__image--size-6" alt="Corporate holidays">
+				<span class="services__text services__text--pos-6">Корпоративный отдых</span>
+			</a>
+		</section>
+
+		<section class="services services--responsive">
+			<div class="row no-gutters">
+				<div class="col-md-6">
+					<a href="#" class="services__link">
+						<img src="images/services_ipad/water.jpg" alt="Water" class="services__image">
+						<p class="services__text">Три незабываемых дня на Южном Буге и море ярких впечатлений! Солнце, теплая вода, сплавы на каяках и катамаранах, скоростной спуск на веревке, веселые вечеринки</p>
+						<span class="services__title">Пешие маршруты</span>
+					</a>
+					<a href="#" class="services__link">
+						<img src="images/services_ipad/winter.jpg" alt="Winter" class="services__image">
+						<p class="services__text">Снежный, солнечный, гостепреимный Домбай! Таким мы запомним его- горнолыжный Домбай  февраль 2014</p>
+						<span class="services__title">Водные походы</span>
+					</a>
+					<a href="#" class="services__link">
+						<img src="images/services_ipad/excursions.jpg" alt="Excursions" class="services__image">
+						<p class="services__text">Мы имели возможность поехать на один день в Тбилиси, пройтись его старинными улочками, полазить по развалинам крепостей, полюбоваться огнями ночного города и его новой архитектурой. </p>
+						<span class="services__title">Походы с детьми</span>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="services__link">
+						<img src="images/services_ipad/hiking.jpg" alt="Hiking" class="services__image">
+						<p class="services__text">Незабываемые впечатления оставила в наших душах поездка в Турцию в этом сезоне.</p>
+						<span class="services__title">Экскурсионные туры</span>
+					</a>
+					<a href="#" class="services__link">
+						<img src="images/services_ipad/corporative.jpg" alt="Corporative" class="services__image">
+						<p class="services__text">Спасибо всем участникам похода за прекрасный отпуск! Ребята с Soft-Group невероятно активные и крутые!</p>
+						<span class="services__title">Горнолыжный отдых</span>
+					</a>
+					<a href="#" class="services__link">
+						<img src="images/services_ipad/kids.jpg" alt="Kids" class="services__image">
+						<p class="services__text">Наши маленькие туристы настолько молодцы что даже не каждый взрослый сможет с ними посоревноваться! Невероятные малыши! </p>
+						<span class="services__title">Корпоративный отдых</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="slider">
+			<h2 class="slider__title"><span class="slider__emit">X</span>treme shop <span class="slider__emit">O</span>n <span class="slider__emit">T</span>op <span class="slider__display">рекомедует</span></h2>
+			<div class="slider__content">
+				<div class="slider__arrows"></div>
+
+				<!-- Slider Iphone -->
+				<div class="slider__items slider__items--iphone">
+					<div class="slider__wrapper">
+						<div class="slider__item">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/jacket_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/jacket_iphone.jpg" alt="Jacket">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Куртка Ziener ZR<br> <span class="slider__family">Код товара: 815-12</span><br> 4 870 грн.</p>
+							</div>
+						</div>
+						<div class="slider__item">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/shoe_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/shoe_iphone.jpg" alt="Shoe">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Лыжные ботинки<br> <span class="slider__family">Salomon X PRO 130</span><br> 8 080 грн.</p>
+							</div>
+						</div>
+						<div class="slider__item slider__item--margin">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/bag_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/bag_iphone.jpg" alt="Bag">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Рюкзак<br> <span class="slider__family">Deuter Quantum 55</span><br> 2 130 грн.</p>
+							</div>
+						</div>
+						<div class="slider__item slider__item--margin">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/board_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/board_iphone.jpg" alt="Board">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Сноуборд Burton<br> <span class="slider__family">Custom X Top</span><br> 5 100 грн.</p>
+							</div>
+						</div>
+					</div>
+					<div class="slider__wrapper">
+						<div class="slider__item">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/jacket_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/jacket_iphone.jpg" alt="Jacket">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Куртка Ziener ZR<br> <span class="slider__family">Код товара: 815-12</span><br> 4 870 грн.</p>
+							</div>
+						</div>
+						<div class="slider__item">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/shoe_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/shoe_iphone.jpg" alt="Shoe">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Лыжные ботинки<br> <span class="slider__family">Salomon X PRO 130</span><br> 8 080 грн.</p>
+							</div>
+						</div>
+						<div class="slider__item slider__item--margin">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/bag_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/bag_iphone.jpg" alt="Bag">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Рюкзак<br> <span class="slider__family">Deuter Quantum 55</span><br> 2 130 грн.</p>
+							</div>
+						</div>
+						<div class="slider__item slider__item--margin">
+							<span class="slider__icon icon-shopping-cart-circle"></span>
+							<div class="slider__help">В корзину</div>
+							<a data-fancybox="gallery" class="slider__link" href="images/slider/board_big.jpg">
+								<img class="slider__image slider__image--iphone" src="images/slider/board_iphone.jpg" alt="Board">
+							</a>
+							<div class="slider__description">
+								<p class="slider__text">Сноуборд Burton<br> <span class="slider__family">Custom X Top</span><br> 5 100 грн.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider other -->
+				<div class="slider__items slider__items--other">
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/jacket_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/jacket.jpg" alt="Jacket">
+							<img class="slider__image slider__image--ipad" src="images/slider/jacket_ipad.jpg" alt="Jacket">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Куртка Ziener ZR<br> <span class="slider__family">Код товара: 815-12</span><br> 4 870 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/shoe_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/shoe.jpg" alt="Shoe">
+							<img class="slider__image slider__image--ipad" src="images/slider/shoe_ipad.jpg" alt="Shoe">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Лыжные ботинки<br> <span class="slider__family">Salomon X PRO 130</span><br> 8 080 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/bag_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/bag.jpg" alt="Bag">
+							<img class="slider__image slider__image--ipad" src="images/slider/bag_ipad.jpg" alt="Bag">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Рюкзак<br> <span class="slider__family">Deuter Quantum 55</span><br> 2 130 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/board_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/board.jpg" alt="Board">
+							<img class="slider__image slider__image--ipad" src="images/slider/board_ipad.jpg" alt="Board">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Сноуборд Burton<br> <span class="slider__family">Custom X Top</span><br> 5 100 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/jacket_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/jacket.jpg" alt="Jacket">
+							<img class="slider__image slider__image--ipad" src="images/slider/jacket_ipad.jpg" alt="Jacket">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Куртка Ziener ZR<br> <span class="slider__family">Код товара: 815-12</span><br> 4 870 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/shoe_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/shoe.jpg" alt="Shoe">
+							<img class="slider__image slider__image--ipad" src="images/slider/shoe_ipad.jpg" alt="Shoe">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Лыжные ботинки<br> <span class="slider__family">Salomon X PRO 130</span><br> 8 080 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/bag_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/bag.jpg" alt="Bag">
+							<img class="slider__image slider__image--ipad" src="images/slider/bag_ipad.jpg" alt="Bag">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Рюкзак<br> <span class="slider__family">Deuter Quantum 55</span><br> 2 130 грн.</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<span class="slider__icon icon-shopping-cart-circle"></span>
+						<div class="slider__help">В корзину</div>
+						<a data-fancybox="gallery" class="slider__link" href="images/slider/board_big.jpg">
+							<img class="slider__image slider__image--desktop" src="images/slider/board.jpg" alt="Board">
+							<img class="slider__image slider__image--ipad" src="images/slider/board_ipad.jpg" alt="Board">
+						</a>
+						<div class="slider__description">
+							<p class="slider__text">Сноуборд Burton<br> <span class="slider__family">Custom X Top</span><br> 5 100 грн.</p>
+						</div>
+					</div>
+				</div>
+				<div class="button button--size">
+					<a class="button__link button__link--size" href="#">СМОТРЕТЬ ВСЕ</a>
+				</div>
+			</div>
+		</section>
+		<section class="team">
+			<div class="team__skew">
+				<div class="team__block-image"></div>
+			</div>
+			<div class="container">
+				<div class="team__block-text">
+					<p class="team__text"><span class="team__emit">ON TOP xtreme shop</span> - молодая команда, но за плечами инструкторов немалый опыт. Мы ходили по рекам Саян и Карпат, преодолевали пороги Алтая, Карелии и Кавказа, совершенствовали свое мастерство на зборах инструкторов, сами воспитывали руководителей походов и инструкторов.</p>
+					<p class="team__text"><span class="team__emit">ON TOP xtreme shop</span> - команда, которая ставит перед собой задачу не просто повести людей в поход, мы идем вместе с Вами, вместе преодолеваем препятствия, вместе отдыхаем и уже после похода все понимают, что стали одной командой!</p>
+					<p class="team__text team__text--margin">В горах Крыма мы работаем с Симферопольскими проводниками, в Карпатах с Ивано- франковскими, что помогает Вам более досконально познакомиться с местными достопримечательностями и обычаями. Местный инструктор досконально знает все тропы на маршрутах, все места ночлега, знает где, в случае непредвиденных обстоятельств, можно сойти с маршрута или как его подкорректировать.</p>
+				</div>
+			</div>
+		</section>
+		<section class="wake-park">
+			<div class="wake-park__skew">
+				<div class="wake-park__block-image"></div>
+			</div>
+			<h2 class="wake-park__title">Wake Park</h2>
+			<ul class="wake-park__items">
+				<li class="wake-park__item"><a class="wake-park__link" href="#">Wake Park в Тахтаулово</a></li>
+				<li class="wake-park__item"><a class="wake-park__link" href="#">Wake Park «Мыс Доброй Надежды»</a></li>
+			</ul>
+			<ul class="wake-park__items-iphone">
+				<li class="wake-park__item-iphone"><a class="wake-park__link" href="#">Wake Park «Мыс Доброй<br> Надежды»<i class="wake-park__icon-iphone wake-park__icon-iphone--top icon-placeholder"></i></a></li>
+				<li class="wake-park__item-iphone wake-park__item-iphone--margin"><a class="wake-park__link" href="#">Wake Park в Тахтаулово<i class="wake-park__icon-iphone icon-placeholder"></i></a></li>
+			</ul>
+		</section>
+		<section class="target">
+			<div class="target__skew">
+				<div class="target__block-image"></div>
+			</div>
+			<div class="container">
+				<div class="target__block-text">
+					<p class="target__text"><span class="target__emit">Наши цели и задачи-</span> пропаганда среди молодежи активного образа жизни и популяризация спортивного туризма!</p>
+					<p class="target__text">Наши инструктора принимают активное участие в слетах и соревнованиях, проводимых областной федерацией спортивного туризма, а также участвуют в составе областной команды в соревнованиях на Кубок Украины и Чемпионатах Украины по водному туризму.</p>
+					<p class="target__text target__text--margin">Мы организовываем и проводим походы выходного дня, категорийные походы водные и пешие. Для желающих можем организовать корпоративный отдых, отдых с детьми в любой понравившийся уголок нашей страны, а также Россию, Грузию.</p>
+				</div>
+			</div>
+		</section>
+		<section class="coordinates">
+			<div class="coordinates__skew">
+				<div class="coordinates__map">
+					<div class="coordinates__info">
+						<h3 class="coordinates__title">On Top</h3>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="coordinates__block-text">
+					<p class="coordinates__text">Мы находимся по адресу:<br> город Полтава, ул. М. Бирюзова 15, ТЦ "Під мостом"<br> Наш магазин-прокат находтся на 1 этаже</p>
+					<div class="share">
+						<ul class="share__items">
+							<li class="share__item"><a href="#" class="share__link"><i class="icon-facebook"></i></a></li>
+							<li class="share__item"><a href="#" class="share__link"><i class="icon-instagram"></i></a></li>
+							<li class="share__item"><a href="#" class="share__link"><i class="icon-telegram"></i></a></li>
+							<li class="share__item"><a href="#" class="share__link"><i class="icon-viber"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="travel">
+			<div class="travel__logo">
+				<img class="travel__image" src="images/logo.svg" alt="Logo">
+			</div>
+			<div class="travel__skew">
+				<div class="travel__block-image"></div>
+			</div>
+			<div class="container">
+				<div class="travel__block-text">
+					<p class="travel__text">Мы организовываем и проводим походы выходного дня, категорийные походы водные и пешие. Для желающих можем организовать корпоративный отдых, отдых с детьми в любой понравившийся уголок нашей страны, а также Россию, Грузию.</p>
+					<p class="travel__text">В зимнее время мы организуем выезды на снежные горки, праздники в заснеженном лесу с костром, юшкой и хороводом, лыжные походы, поездки с катанием на лыжах и сноубордах в горах Кавказа и Карпат. У нас работает пункт проката туристического снаряжения.</p>
+					<p class="travel__text travel__text--margin">И если Вам от 2 и до... и при этом Вы сильны духом, инициативны и мечтаете покорять вершины, проходить порожистые реки, отправиться в далекое путешествие на велосипеде — МЫ ПРИГЛАШАЕМ ВАС в путешествие с командой <span class="travel__emit">ON TOP Extreme!!!</span></p>
+				</div>
+			</div>
+			<div class="travel__block-skew"></div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- Tablet -->
+				<div class="footer__tablet col-5 offset-1">
+					<div class="footer__list footer__list--margin-1">
+						<h3 class="footer__title">Мой кабинет</h3>
+						<ul class="footer__items">
+							<li class="footer__item footer__item--before"><a href="#" class="footer__link">Корзина</a></li>
+							<li class="footer__item footer__item--margin footer__item--before"><a href="#" class="footer__link">Заказы</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__tablet col-6">
+					<div class="footer__list footer__list--margin">
+						<h3 class="footer__title">Контакты</h3>
+						<ul class="footer__items footer__items--margin-1">
+							<li class="footer__item">+38 (095) 824-27-74</li>
+							<li class="footer__item">+38 (098) 046-32-95</li>
+							<li class="footer__item">+38(066) 199-20-69</li>
+							<li class="footer__item footer__item--margin">+38(098) 062-93-73</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Descktop -->
+				<div class="col-3 footer__hidden">
+					<div class="footer__list footer__list--margin">
+						<h3 class="footer__title">Активный отдых с OnTop</h3>
+						<ul class="footer__items">
+							<li class="footer__item"><a href="#" class="footer__link">Пешие маршруты</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Водные походы</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Горнолыжный отдых</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Экскурсионные туры</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Корпоративный отдых</a></li>
+							<li class="footer__item footer__item--margin"><a href="#" class="footer__link">Походы с детьми</a></li>
+						</ul>
+					</div>
+					<div class="footer__list">
+						<h3 class="footer__title">Мой кабинет</h3>
+						<ul class="footer__items">
+							<li class="footer__item"><a href="#" class="footer__link">Корзина</a></li>
+							<li class="footer__item footer__item--margin"><a href="#" class="footer__link">Заказы</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-3 footer__hidden">
+					<div class="footer__list footer__list--margin">
+						<h3 class="footer__title">Xtreme SHOP</h3>
+						<ul class="footer__items">
+							<li class="footer__item"><a href="#" class="footer__link">Туристическое снаряжение</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Обувь</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Аксессуары, защита</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Одежда</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Горнолыжное снаряжение</a></li>
+							<li class="footer__item footer__item--margin"><a href="#" class="footer__link">Сноубордичкское снаряжение</a></li>
+						</ul>
+					</div>
+					<div class="footer__list">
+						<h3 class="footer__title">Контакты</h3>
+						<ul class="footer__items">
+							<li class="footer__item">+38 (095) 824-27-74</li>
+							<li class="footer__item footer__item--margin">+38 (098) 046-32-95</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-3 footer__hidden">
+					<div class="footer__list footer__list--margin">
+						<h3 class="footer__title">Прокат</h3>
+						<ul class="footer__items">
+							<li class="footer__item"><a href="#" class="footer__link">Байдарки</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Туристические палатки</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Туристические рюкзаки</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Лыжи и сноуборды</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Велосипеды</a></li>
+							<li class="footer__item footer__item--margin"><a href="#" class="footer__link">Гидрокостюмы</a></li>
+						</ul>
+					</div>
+					<ul class="footer__items footer__items--margin">
+						<li class="footer__item">+38(066) 199-20-69</li>
+						<li class="footer__item footer__item--margin">+38(098) 062-93-73</li>
+					</ul>
+				</div>
+
+				<div class="col-3 footer__hidden">
+					<div class="footer__list footer__list--margin-1">
+						<h3 class="footer__title">Wake Park</h3>
+						<ul class="footer__items">
+							<li class="footer__item"><a href="#" class="footer__link">Wake Park в Тахтаулово</a></li>
+							<li class="footer__item footer__item--margin"><a href="#" class="footer__link footer__link--space">Wake Park «Мыс Доброй Надежды»</a></li>
+						</ul>
+					</div>
+					<div class="footer__list footer__list--margin-2">
+						<h3 class="footer__title">Дополнительные услуги</h3>
+						<ul class="footer__items">
+							<li class="footer__item footer__item--margin"><a href="#" class="footer__link">Ремонт лыж и сноубордов</a></li>
+						</ul>
+					</div>
+					<p class="footer__address"><a href="#" class="footer__link">Полтава, ул. М. Бирюзова 15, ТЦ<br> "Під мостом"</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAFqPKNORR3Ctvc2Rzj8YX5oebd7xpSGVs"></script>
+
+	<!--build:js js/main.min.js -->
+	<script src="js/modules/jquery.min.js"></script>
+	<script src="js/modules/jquery-migrate.min.js"></script>
+	<script src="js/modules/bootstrap.bundle.min.js"></script>
+	<script src="js/modules/jquery.fancybox.min.js"></script>
+	<script src="js/modules/slick.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
+</body>
+</html>

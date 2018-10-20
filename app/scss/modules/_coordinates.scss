@@ -1,0 +1,90 @@
+.coordinates {
+	position: relative;
+	padding: 228px 0 20px;
+	z-index: 0;
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		background: #fff;
+		z-index: -1;
+	}
+
+	&__map {
+		@include size(50%, 117%);
+		@include pos($t: -7%, $r: 0);
+		transform: skewY(6deg);
+	}
+
+	&__title {
+		color: #000;
+	}
+
+	&__text {
+		color: #000;
+		line-height: 2.1875rem;
+		margin-bottom: 19%;
+	}
+
+	@media (min-width: 1367px) {
+		padding-top: 13%;
+
+		&__map {
+			height: 121%;
+			top: -9%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		padding: 770px 0 0;
+
+		&__skew {
+			height: 69%;
+		}
+
+		&__map {
+			width: 100%;
+		}
+
+		&__block-text {
+			width: 82%;
+			margin: 0 auto;
+		}
+
+		&__text {
+			font-size: 1.125rem;
+			line-height: 2.7rem;
+			margin-bottom: 50px;
+			text-align: right;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding-top: 335px;
+		padding-bottom: 30px;
+
+		&__skew {
+			height: 56%;
+		}
+
+		&__map {
+			width: 100%;
+			height: 125%;
+		}
+
+		&__block-text {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 1.65rem;
+			margin-bottom: 25px;
+			text-align: right;
+		}
+	}
+}

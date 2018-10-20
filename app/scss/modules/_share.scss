@@ -1,0 +1,45 @@
+.share {
+
+	&__items {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 20px;
+
+		&--margin {
+			margin-right: 0;
+		}
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	&__link {
+		font-size: 30px;
+		color: #000;
+		transition: color .08s linear;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+
+		&__item {
+			margin-right: 12px;
+
+			&--margin {
+				margin-right: 0;
+			}
+		}
+
+		&__link {
+			font-size: 20px;
+		}
+		
+	}
+}
+

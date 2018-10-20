@@ -1,0 +1,163 @@
+.wake-park {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 465px 7.3% 0;
+	z-index: 0;
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		z-index: -1;
+	}
+
+	&__block-image {
+		@include size(100%, 125%);
+		@include pos($t: -13%, $l: 0);
+		transform: skewY(6deg);
+		background: #c6c6c6 url(../images/wake-park.jpg) no-repeat;
+		background-position: 0 82%;
+		background-size: cover;
+	}
+
+	&__title {
+		font-size: 7.5rem;
+		font-weight: 900;
+		letter-spacing: -0.07em;
+
+		&::first-letter {
+			color: $red;
+		}
+	}
+
+	&__items-iphone {
+			display: none;
+		}
+
+	&__items {
+		margin-right: 3.4%;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 10px;
+		text-align: right;
+		transform-origin: right center;
+
+		&::after {
+			@extend [class^="icon-"];
+			@include pos($t: 0, $r: -42px);
+			content: '\e904';
+			color: $red;
+		}
+
+		&:hover {
+			transform: scale(1.07);
+		}
+	}
+
+	&__link {
+		font-weight: 300;
+		font-size: 1.125rem;
+	}
+
+	&__iphone {
+		display: none;
+	}
+
+	@media (min-width: 1367px) {
+
+		&__block-image {
+			height: 134%;
+			top: -17%;
+			background-position: 0 68%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		display: block;
+		padding-top: 70px;
+		padding-bottom: 50px;
+
+		&__title {
+			font-size: 3.75rem;
+			letter-spacing: -0.07em;
+			margin-bottom: 55px;
+			margin-right: 5%;
+			text-align: right;
+		}
+
+		&__items-iphone {
+			display: none;
+		}
+
+		&__items {
+			margin-right: 4.3%;
+		}
+
+		&__item {
+			margin-bottom: 25px;
+
+			&::after {
+				right: -30px;
+			}
+		}
+
+		&__link {
+			font-weight: 400;
+			font-size: 0.875rem;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		display: block;
+		padding-top: 40px;
+		padding-right: 11%;
+		padding-bottom: 27px;
+		text-align: right;
+
+		&__title {
+			line-height: 3.1875rem;
+			font-size: 3.75rem;
+			letter-spacing: -0.07em;
+			margin-bottom: 15px;
+		}
+
+		&__items-iphone {
+			display: inline-block;
+			margin-right: 4.3%;
+		}
+
+		&__item-iphone {
+			position: relative;
+			margin-bottom: 12px;
+			text-align: left;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+		}
+
+		&__icon-iphone {
+			@include pos($t: 1px, $r: -28px);
+			font-size: 1rem;
+			color: $red;
+
+			&--top {
+				top: 5px;
+			}
+		}
+
+		&__link {
+			font-weight: 400;
+			font-size: 0.625rem;
+		}
+
+		&__items {
+			display: none;
+		}
+	}
+}

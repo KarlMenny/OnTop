@@ -1,0 +1,139 @@
+.price {
+	padding: 60px 0;
+	text-align: center;
+
+	&__link {
+		display: block;
+		padding: 55px 0 48px;
+		background: #0e1d32;
+		border-radius: 20px 20px 0 0;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			background: $red;
+		}
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 900;
+		margin-bottom: 15px;
+	}
+
+	&__cost {
+		position: relative;
+		display: inline-block;
+		font-size: 3rem;
+		font-weight: 900;
+
+		&::before {
+			@include pos($t: 0, $l: -32px);
+			@extend [class^="icon-"];
+			content: "\e908";
+			font-size: 1.25rem;
+		}
+	}
+
+	&__items {
+		padding: 28px 0;
+		border-left: 2px;
+		border-right: 2px;
+		border-bottom: 2px;
+		border-color: #c7cbd0;
+		border-style: solid;
+		border-radius: 0 0 20px 20px;
+	}
+
+	&__item {
+		position: relative;
+		font-size: 1.125rem;
+		font-weight: 300;
+		margin-bottom: 55px;
+		color: #000;
+
+		&::before {
+			@include pos($b: -27px, $l: 50%);
+			@include size(170px, 1px);
+			content: '';
+			transform: translateX(-50%);
+			background: #c5c5c5;
+		}
+
+		&--margin {
+			margin-bottom: 0;
+		}
+
+		&--before::before {
+			display: none;
+		}
+	}
+
+	&__text {
+		padding: 45px 0 43px;
+		line-height: 3rem;
+		font-size: 1.125rem;
+		font-weight: 300;
+		color: #000;
+		border-left: 2px;
+		border-right: 2px;
+		border-bottom: 2px;
+		border-color: #c7cbd0;
+		border-style: solid;
+		border-radius: 0 0 20px 20px;
+	}
+
+	&__emit {
+		color: $red;
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+
+		&--padding {
+			padding-top: 0;
+			padding-bottom: 30px;
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		width: 80%;
+		margin: 0 auto;
+
+		&--padding {
+			padding-top: 0;
+			padding-bottom: 30px;
+		}
+
+		&__link {
+			padding: 32px 0 25px;
+		}
+
+		&__title {
+			margin-bottom: 0;
+		}
+
+		&__items {
+			padding: 18px 0;
+		}
+
+		&__item {
+			font-size: 0.625rem;
+			font-weight: 400;
+			margin-bottom: 35px;
+
+			&--margin {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				width: 110px;
+				bottom: -19px;
+			}
+		}
+
+		&__text {
+			font-size: 0.625rem;
+			line-height: 1.5625rem;
+			padding: 38px 0;
+		}
+	}
+}

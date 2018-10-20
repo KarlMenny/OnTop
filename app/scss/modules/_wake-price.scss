@@ -1,0 +1,41 @@
+.wake-price {
+	position: relative;
+
+	&__skew {
+		@include size(100%);
+		@include pos($t: 0, $l: 0);
+		overflow: hidden;
+		transform: skewY(-6deg);
+		transform-origin: 100%;
+		background: #fff;
+	}
+
+	&__logo {
+		@include pos($b: -37%, $l: 44.5%);
+	}
+
+	@media (max-width: 1366px) {
+
+		&__logo {
+			bottom: -31%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+
+		&__logo {
+			bottom: -30%;
+			left: 39.5%;
+			transform: scale(0.7);
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+
+		&__logo {
+			bottom: -34%;
+			left: 29%;
+			transform: scale(0.3);
+		}
+	}
+}
